@@ -1,19 +1,18 @@
-// import React from 'react'
+import React from 'react';
+const Song = ({ artist, song }) => {
 
-// const Song = ({ song }) => {
+    const {id, name} = artist
+    const { title, category } = song
+    return (
+        <>
+        <h1>Song: {title}</h1>
+        <h1>artist: {name}</h1>
+        <p>
+            {category}
+        </p>
+        <a href={`/artists/${id}`}>Show page of {name}</a>
+        </>
+    )
+}
 
-//   const { id, name, created_at } = song
-//   return (
-//     <>
-//       <h3>{name}</h3>
-//       <p>
-//         Created: {created_at}, id: {id}
-//       </p>
-//       <a href="/">Back</a>
-//       <br />
-//       <a href={`/song/${id}/name`}>Go to Songs</a>
-//     </>
-//   )
-// }
-
-// export default Song;
+export default Song;

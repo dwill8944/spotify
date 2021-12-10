@@ -12,6 +12,8 @@ const Artist = ({ billboard, artist }) => {
                 {artist.genre}
             </p>
             <a href={`/billboards/${id}`}>Show page of {title}</a>
+            <br />
+            <a href={`/artists/${id}/songs/`}>Go to Songs</a>
         </>
     )
 }
